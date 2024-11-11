@@ -12,7 +12,7 @@ var Grandline *gorm.DB
 
 func ConnectGrandline() {
 	var err error
-	dsn := os.Getenv("DSN_URL")
+	dsn := os.Getenv("COMMUNICATOR_DSN_URL")
 	Grandline, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {

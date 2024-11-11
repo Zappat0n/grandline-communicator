@@ -10,7 +10,6 @@ import (
 var DB *gorm.DB
 
 func init() {
-	initializers.LoadEnvVariables()
 	db.ConnectGrandline()
 	initializers.Routes()
 }
