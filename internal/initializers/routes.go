@@ -11,9 +11,9 @@ func Routes() {
 	http.HandleFunc("/message", handlers.MessagesHandler)
 	http.HandleFunc("/", handlers.HealthCheckHandler)
 
-	fmt.Println("Starting server at port 8080")
+	fmt.Println("Starting server at port 8000")
 
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe(":8000", nil); err != nil {
 		fmt.Println(err)
 	}
 }
